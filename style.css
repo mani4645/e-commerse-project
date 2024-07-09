@@ -1,0 +1,285 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins';
+    font-size: 22px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0px 25px 20px -20px rgba(0, 0, 0, 0.45);
+}
+
+.navbar-links {
+    display: flex;
+    column-gap: 20px;
+}
+
+.navbar-link a {
+    text-decoration: none;
+    color: rgb(66, 26, 26);
+}
+
+.navbar-link a:hover {
+    text-decoration: underline;
+    color: rgb(66, 26, 26);
+}
+
+.navbar-menu-taggle {
+    display: none;
+}
+
+.side-navbar {
+    background-color: rgb(34, 31, 31);
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -60%;
+    padding: 20px;
+    color: white;
+    transition: 1s;
+}
+
+.side-navbar-link {
+    margin-bottom: 30px;
+}
+
+.side-navbar-link a {
+    text-decoration: none;
+    color: white;
+}
+
+.side-navbar-link a:hover {
+    text-decoration: underline;
+}
+
+.img1 {
+    width: 350px;
+    height: 300px;
+    border-radius: 3rem;
+}
+
+
+.header {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+}
+
+.header-button {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+
+.service {
+    padding: 20px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.service-container-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.service-container-2 div {
+    background-color: rgb(231, 196, 196);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.img2 {
+    width: 200px;
+    height: 200px;
+}
+
+.new-arrival {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.new-arrival-container {
+    position: relative;
+    flex-basis: 20px;
+}
+
+.new-arrival button {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 10px;
+    color: #1d232c;
+    position: absolute;
+    top: 50%;
+    left: 18%;
+    border-radius: 10px;
+    border: none;
+}
+
+
+.news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.news input {
+    padding: 11px;
+    width: 80vw;
+    margin-bottom: 10px;
+    border: solid black 3px;
+}
+
+.news button {
+    margin-bottom: 30px;
+    color: white;
+    background-color: rgb(34, 31, 31);
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+}
+
+.footer {
+    margin-top: 20px;
+    padding: 40px;
+    background-color: rgb(34, 31, 31);
+    color: white;
+}
+
+/*protect section.*/
+.prodect-section {
+    margin-top: 20px;
+}
+
+.prodect-search {
+    width: 80%;
+    border: solid black 2px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+}
+
+.prodect-search input {
+    border: none;
+    background-color: transparent;
+    width: 100%;
+}
+
+.prodect-search input:focus {
+    outline: none;
+}
+
+.prodects {
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.prodect-box {
+    text-align: center;
+    flex-basis: 20%;
+}
+
+.prodect-box img {
+    border-radius: 10px;
+}
+
+.contect-container{
+    color: white;
+    background-color: rgb(34, 31, 31);
+    width: 50%;
+    height: 100%;
+    margin-top: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 25px 20px -20px rgba(0, 0, 0, 0.45);
+    
+}
+
+.contect-box input,textarea{
+    padding: 20px;
+    width: 90%;
+    border: none;
+    border-radius: 5px;
+}
+
+.contect-container button{
+    color: white;
+    background-color: brown;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contect-container input:focus{
+    outline: none;
+}
+
+
+
+@media screen and (max-width:700px) {
+    .navbar-menu-taggle {
+        display: block;
+    }
+
+    .navbar-link {
+        display: none;
+    }
+
+    .header-image {
+        display: none;
+    }
+
+    .service-container {
+        display: none;
+    }
+
+    .service-container-2 {
+        flex-direction: column;
+    }
+
+    .img1{
+        display: none;
+    }
+}
